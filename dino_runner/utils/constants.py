@@ -8,14 +8,26 @@ SCREEN_WIDTH = 1100
 FPS = 30
 IMG_DIR = os.path.join(os.path.dirname(__file__), "..", "assets")
 
+
 # Assets Constants
 ICON = pygame.image.load(os.path.join(IMG_DIR, "DinoWallpaper.png"))
+
+ICON_1 = [
+    pygame.image.load(os.path.join(IMG_DIR, "DinoRun1icon.png")),
+    pygame.image.load(os.path.join(IMG_DIR, "DinoRun2icon.png")),
+]
+
 GAMEOVER = pygame.image.load(os.path.join(IMG_DIR,"Other/GameOver.png"))
 RESET = pygame.image.load(os.path.join(IMG_DIR,"Other/Reset.png"))
+DEAD = pygame.image.load(os.path.join(IMG_DIR,"Dino/DinoDead.png"))
 
 RUNNING = [
     pygame.image.load(os.path.join(IMG_DIR, "Dino/DinoRun1.png")),
     pygame.image.load(os.path.join(IMG_DIR, "Dino/DinoRun2.png")),
+]
+RUN_HAMMER = [
+    pygame.image.load(os.path.join(IMG_DIR, "Dino/DinoRun1Hammer.png")),
+    pygame.image.load(os.path.join(IMG_DIR, "Dino/DinoRun2Hammer1.png")),
 ]
 
 RUNNING_SHIELD = [
@@ -63,6 +75,7 @@ BIRD = [
     pygame.image.load(os.path.join(IMG_DIR, "Bird/Bird2.png")),
 ]
 
+
 CLOUD = pygame.image.load(os.path.join(IMG_DIR, 'Other/Cloud.png'))
 SHIELD = pygame.image.load(os.path.join(IMG_DIR, 'Other/shield.png'))
 HAMMER = pygame.image.load(os.path.join(IMG_DIR, 'Other/hammer.png'))
@@ -72,5 +85,8 @@ BG = pygame.image.load(os.path.join(IMG_DIR, 'Other/Track.png'))
 HEART = pygame.image.load(os.path.join(IMG_DIR, 'Other/SmallHeart.png'))
 
 DEFAULT_TYPE = "default"
-
 FONT_STYLE = "freesansbold.ttf"
+SHIELD_TYPE = "shield"
+HEART_TYPE = "heart"
+HAMMER_TYPE = "hammer"
+

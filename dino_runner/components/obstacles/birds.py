@@ -19,3 +19,5 @@ class Bird(Obstacle):
      
     screen.blit(BIRD[self.index // 5], self.rect)
     self.index += 1
+    
+    

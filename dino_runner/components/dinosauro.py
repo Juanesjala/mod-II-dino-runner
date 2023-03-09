@@ -24,8 +24,8 @@ class Dinosauro(Sprite):
     elif self.dino_jump:
       self.jump()
     elif self.dino_duck:
-      self.duck()   
-      
+      self.duck()
+
     if user_input[pygame.K_UP] and not self.dino_jump:
       pygame.mixer.music.load('dino_runner/components/music/jump.mp3')
       pygame.mixer.music.play()
