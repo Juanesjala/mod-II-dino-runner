@@ -1,5 +1,5 @@
 import pygame
-from dino_runner.utils.constants import FONT_STYLE, SCREEN_HEIGHT, SCREEN_WIDTH
+from dino_runner.utils.constants import FONT_STYLE, SCREEN_HEIGHT, SCREEN_WIDTH 
 class Menu:
   half_screen_height = SCREEN_HEIGHT // 2
   half_screen_width = SCREEN_WIDTH // 2

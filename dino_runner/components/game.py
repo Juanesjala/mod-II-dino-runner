@@ -1,6 +1,6 @@
 import pygame
 from dino_runner.utils.constants import BG, ICON, SCREEN_HEIGHT, SCREEN_WIDTH, TITLE, FPS , FONT_STYLE, GAMEOVER,RESET ,CLOUD
-from dino_runner.components.dinosauro import Dinosauro
+from dino_runner.components.dinosaurio import Dinosauro
 from dino_runner.components.obstacles.obstacle_manager import ObstacleManager
 from dino_runner.components.menu import Menu
 
@@ -96,7 +96,8 @@ class Game:
         half_screen_width = SCREEN_WIDTH // 2
         half_screen_height = SCREEN_HEIGHT // 2
         if self.death_count == 0:
-            self.screen.blit(ICON,(half_screen_width -100, half_screen_height - 50))
+            self.screen.blit(ICON,(half_screen_width -200, half_screen_height - 50))
+            self.menu.update_message('START')
             self.menu.draw(self.screen)
         else:
             self.screen.blit(GAMEOVER,(half_screen_width -195, half_screen_height - 140))
